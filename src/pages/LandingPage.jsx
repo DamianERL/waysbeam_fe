@@ -1,4 +1,5 @@
 import React from 'react'
+import Rupiah from "rupiah-format";
 import Navbar from '../components/navbar/Navbar'
 import cssModules from '../styles/landingPage.module.css'
 import productD from '../dummy/product'
@@ -28,7 +29,7 @@ export default function LandingPage() {
                     <p className={cssModules.titlep}>
                         {item.title}</p>
                     <p className={cssModules.pricep}>
-                        {item.price }</p>
+                        {Rupiah.convert(item.price) }</p>
                     <p className={cssModules.stockp}>
                         {item.stock}</p>
                     </div>

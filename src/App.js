@@ -3,9 +3,10 @@ import { BrowserRouter,Routes,Route} from 'react-router-dom'
 import LandingPage from "./pages/LandingPage";
 import Profile from './pages/Profile';
 import DetailProduct from './pages/DetailProduct';
-import Cart from './pages/Profile';
-import Transaction from './pages/Profile';
-import AddProduct from './pages/Profile';
+import Cart from './pages/Cart';
+import Transaction from './pages/Transaction';
+import AddProduct from './pages/AddProduct';
+import ListProduct from './pages/ListProduct'
 function App() {
   return (
     <BrowserRouter>
@@ -15,6 +16,7 @@ function App() {
       <Route  path="/detail-product/:id" element={<DetailProduct/>}/>
       <Route  path="/cart" element={<Cart/>}/>
       <Route  path="/transaction" element={<Transaction/>}/>
+      <Route  path="/list-product" element={<ListProduct/>}/>
       <Route  path="/add-product" element={<AddProduct/>}/>
     </Routes>
     </BrowserRouter>

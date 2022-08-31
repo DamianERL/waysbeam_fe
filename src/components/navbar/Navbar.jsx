@@ -1,5 +1,5 @@
 import React from 'react'
-// import { Link } from 'react-router-dom'
+import { Link } from 'react-router-dom'
 import cssModules from "../../styles/nav.module.css"
 
 
@@ -8,7 +8,9 @@ export default function Navbar() {
     <>
     <nav className={cssModules.container}>
         <div>
+            <Link to={"/"}>
             <img src='https://res.cloudinary.com/doqkbrvkq/image/upload/v1661842683/Icon_nxtk0f.svg' alt="" />
+            </Link>
         </div>
         <div className={cssModules.auth}>
             {/* <button>
