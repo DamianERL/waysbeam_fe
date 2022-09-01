@@ -30,6 +30,7 @@ export default function AddProduct() {
         htmlFor="addproduct"
         className={css.input1 }
         >
+          <img src="https://res.cloudinary.com/doqkbrvkq/image/upload/v1661974422/Vector_u2xsdc.svg" alt="" />
         </label>
         <button className={css.btn}>Add Product</button>
         </div>
