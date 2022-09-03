@@ -1,0 +1,20 @@
+.navimg{
+    width: 60px;
+    height: 60px;
+    
+}
+.navbarItem{
+    display: flex;
+    text-decoration: none;
+    color: black;
+    font-size: 15px;
+    font-weight: 600;
+}
+.navbarItem1{
+    display: flex;
+    text-decoration: none;
+    color: black;
+    font-size: 15px;
+    font-weight: 600;
+    padding: 0 0 0 7px;
+}

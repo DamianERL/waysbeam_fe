@@ -1,14 +1,25 @@
+//dependencies
 import React from 'react'
 import Rupiah from "rupiah-format";
-import Navbar from '../components/navbar/Navbar'
-import cssModules from '../styles/landingPage.module.css'
 import productD from '../dummy/product'
 import { Link } from "react-router-dom";
-export default function LandingPage() {
+import { useState,useContext } from 'react';
 
+//component
+import {UserContext} from '../context/UserContext'
+import Navbar from '../components/navbar/Navbar'
+import cssModules from '../styles/landingPage.module.css'
+
+export default function LandingPage() {
+    //userdata
+    const [state] = useContext(UserContext);
+
+//modal login
+const [show,setShow] =useState(false)
+const handleClick = () => setShow(true)
   return (
     <>
-    <Navbar/>
+    <Navbar setShow={setShow} show={show}/>
     <section>
         <div className={cssModules.heroSection}>
           <img  src="https://res.cloudinary.com/doqkbrvkq/image/upload/v1661841358/Jumbotron_js2fee.svg" alt="" />
@@ -20,7 +31,9 @@ export default function LandingPage() {
                 <div key={index} className={cssModules.card1}>
                    <div className={cssModules.cardProduct}>
                     <Link
-                    to={`/detail-product/${item.id}`}
+                    to={ 
+                        state.isLogin === true ? `/detail-product/${item.id}`:""
+                    } onClick={state.isLogin === false ? handleClick:""}
                     >
                     <img className={cssModules.imageProduct} src={item.image} alt=""/>
                     </Link>

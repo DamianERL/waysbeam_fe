@@ -7,6 +7,10 @@ import Cart from './pages/Cart';
 import Transaction from './pages/Transaction';
 import AddProduct from './pages/AddProduct';
 import ListProduct from './pages/ListProduct'
+import 'bootstrap/dist/css/bootstrap.min.css';
+import 'bootstrap/dist/js/bootstrap';
+
+// import './styles/index.css'
 function App() {
   return (
     <BrowserRouter>

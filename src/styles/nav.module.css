@@ -1,9 +1,11 @@
 span{
     display: block;
 }
-
+.d-none-i{
+    display: none !important;
+}
 .container{
-
+    
     padding: 0 70px 0 80px;
     /* width: 1440px; */
     height: 80px;
@@ -15,7 +17,9 @@ span{
     box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
 }
 
-
+.cart21{
+    
+}
 .login{
     border: 1px solid black;
     display: flex;
